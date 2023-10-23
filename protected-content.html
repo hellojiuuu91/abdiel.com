@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Protected Content</title>
+    <style>
+        body {
+            background-color: lightblue;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        #content-container {
+            text-align: center;
+        }
+        #content-container img {
+            max-width: 80%;
+            height: auto;
+        }
+        #redirect-button {
+            /* You can control the spacing with CSS as needed */
+        }
+    </style>
+</head>
+<body>
+    <div id="content-container">
+        <p style="font-family: 'Courier New', Courier, monospace; font-size: 24px;">Your Text Here</p>
+        <img src="superdog.jpg">
+        <br> <!-- Line break for spacing -->
+        <button id="redirect-button">Im feeling lucky</button>
+    </div>
+
+    <script>
+        document.getElementById("redirect-button").addEventListener("click", function() {
+            window.location.href = "secret.html";
+        });
+    </script>
+</body>
+</html>
