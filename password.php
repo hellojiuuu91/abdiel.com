@@ -1,4 +1,4 @@
 <?php
-$password = "supermario"; // Change this to your desired password
+$password = "abdiel"; // Change this to your desired password
 echo $password;
 ?>
